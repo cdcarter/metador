@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <h1>Metador</h1>
+  <p class="lead">
+    A quicker metadata explorer.
+  </p>
+</div>
+
+<div class="row">
+<oauth
+  site="https://login.salesforce.com"
+  client-id="3MVG9fMtCkV6eLhf.7unqhRSE_dReXlLooBZnZ8Aj5PWXQ_gRGbv2fx.n3SrrCvLgXwyHokt8cUVPYJzocnle"
+  redirect-uri="https://lvh.me:9000"
+  scope="full"
+  authorize-path="/services/oauth2/authorize"
+  storage="localStorage">
+</oauth>
+
+<table class="table">
+  <tr><th>Id</th><th>DeveloperName</th></tr>
+  <tr ng-repeat="object in objects"><td>{{object.Id}}</td><td>{{object.DeveloperName}}</td></tr>
+</table>
+</div>
